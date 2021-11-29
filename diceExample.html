@@ -1,0 +1,450 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice</title>
+    <link rel="stylesheet" type="text/css" href="diceExample.css" />
+</head>
+
+<body>
+    <div class="flex-wrapper">
+        <div class="controls">
+            <button type="button" id="roll-button" class="dice-controls roll-dice-btn">würfeln</button>
+            <button type="button" id="sort-button" class="dice-controls small-big-btn">Klein Gross</button>
+            <button type="button" id="sortDesc-button" class="dice-controls big-small-btn">Gross Klein</button>
+            <button type="button" id="oddEvenSort-button" class="dice-controls even-odd-btn">Gerade / Ungerage</button>
+        </div>
+        <div class="main">
+            <div class="scene">
+                <div class="cube" data-roll="1">
+                    <div class="cube__face cube__face--1">
+                        <span class="pip"></span>
+                    </div>
+                    <div class="cube__face cube__face--2">
+                        <span class="pip"></span>
+                        <span class="pip"></span>
+                    </div>
+                    <div class="cube__face cube__face--3">
+                        <span class="pip"></span>
+                        <span class="pip"></span>
+                        <span class="pip"></span>
+                    </div>
+                    <div class="cube__face cube__face--4">
+                        <div class="column">
+                            <span class="pip"></span>
+                            <span class="pip"></span>
+                        </div>
+                        <div class="column">
+                            <span class="pip"></span>
+                            <span class="pip"></span>
+                        </div>
+                    </div>
+                    <div class="cube__face cube__face--5">
+                        <div class="column">
+                            <span class="pip"></span>
+                            <span class="pip"></span>
+                        </div>
+                        <div class="column">
+                            <span class="pip"></span>
+                        </div>
+                        <div class="column">
+                            <span class="pip"></span>
+                            <span class="pip"></span>
+                        </div>
+                    </div>
+                    <div class="cube__face cube__face--6">
+                        <div class="column">
+                            <span class="pip"></span>
+                            <span class="pip"></span>
+                            <span class="pip"></span>
+                        </div>
+                        <div class="column">
+                            <span class="pip"></span>
+                            <span class="pip"></span>
+                            <span class="pip"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scene">
+                <div class="cube" data-roll="2">
+                    <div class="cube__face cube__face--1">
+                        <span class="pip"></span>
+                    </div>
+                    <div class="cube__face cube__face--2">
+                        <span class="pip"></span>
+                        <span class="pip"></span>
+                    </div>
+                    <div class="cube__face cube__face--3">
+                        <span class="pip"></span>
+                        <span class="pip"></span>
+                        <span class="pip"></span>
+                    </div>
+                    <div class="cube__face cube__face--4">
+                        <div class="column">
+                            <span class="pip"></span>
+                            <span class="pip"></span>
+                        </div>
+                        <div class="column">
+                            <span class="pip"></span>
+                            <span class="pip"></span>
+                        </div>
+                    </div>
+                    <div class="cube__face cube__face--5">
+                        <div class="column">
+                            <span class="pip"></span>
+                            <span class="pip"></span>
+                        </div>
+                        <div class="column">
+                            <span class="pip"></span>
+                        </div>
+                        <div class="column">
+                            <span class="pip"></span>
+                            <span class="pip"></span>
+                        </div>
+                    </div>
+                    <div class="cube__face cube__face--6">
+                        <div class="column">
+                            <span class="pip"></span>
+                            <span class="pip"></span>
+                            <span class="pip"></span>
+                        </div>
+                        <div class="column">
+                            <span class="pip"></span>
+                            <span class="pip"></span>
+                            <span class="pip"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scene">
+                <div class="cube" data-roll="3">
+                    <div class="cube__face cube__face--1">
+                        <span class="pip"></span>
+                    </div>
+                    <div class="cube__face cube__face--2">
+                        <span class="pip"></span>
+                        <span class="pip"></span>
+                    </div>
+                    <div class="cube__face cube__face--3">
+                        <span class="pip"></span>
+                        <span class="pip"></span>
+                        <span class="pip"></span>
+                    </div>
+                    <div class="cube__face cube__face--4">
+                        <div class="column">
+                            <span class="pip"></span>
+                            <span class="pip"></span>
+                        </div>
+                        <div class="column">
+                            <span class="pip"></span>
+                            <span class="pip"></span>
+                        </div>
+                    </div>
+                    <div class="cube__face cube__face--5">
+                        <div class="column">
+                            <span class="pip"></span>
+                            <span class="pip"></span>
+                        </div>
+                        <div class="column">
+                            <span class="pip"></span>
+                        </div>
+                        <div class="column">
+                            <span class="pip"></span>
+                            <span class="pip"></span>
+                        </div>
+                    </div>
+                    <div class="cube__face cube__face--6">
+                        <div class="column">
+                            <span class="pip"></span>
+                            <span class="pip"></span>
+                            <span class="pip"></span>
+                        </div>
+                        <div class="column">
+                            <span class="pip"></span>
+                            <span class="pip"></span>
+                            <span class="pip"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scene">
+                <div class="cube" data-roll="4">
+                    <div class="cube__face cube__face--1">
+                        <span class="pip"></span>
+                    </div>
+                    <div class="cube__face cube__face--2">
+                        <span class="pip"></span>
+                        <span class="pip"></span>
+                    </div>
+                    <div class="cube__face cube__face--3">
+                        <span class="pip"></span>
+                        <span class="pip"></span>
+                        <span class="pip"></span>
+                    </div>
+                    <div class="cube__face cube__face--4">
+                        <div class="column">
+                            <span class="pip"></span>
+                            <span class="pip"></span>
+                        </div>
+                        <div class="column">
+                            <span class="pip"></span>
+                            <span class="pip"></span>
+                        </div>
+                    </div>
+                    <div class="cube__face cube__face--5">
+                        <div class="column">
+                            <span class="pip"></span>
+                            <span class="pip"></span>
+                        </div>
+                        <div class="column">
+                            <span class="pip"></span>
+                        </div>
+                        <div class="column">
+                            <span class="pip"></span>
+                            <span class="pip"></span>
+                        </div>
+                    </div>
+                    <div class="cube__face cube__face--6">
+                        <div class="column">
+                            <span class="pip"></span>
+                            <span class="pip"></span>
+                            <span class="pip"></span>
+                        </div>
+                        <div class="column">
+                            <span class="pip"></span>
+                            <span class="pip"></span>
+                            <span class="pip"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scene">
+                <div class="cube" data-roll="5">
+                    <div class="cube__face cube__face--1">
+                        <span class="pip"></span>
+                    </div>
+                    <div class="cube__face cube__face--2">
+                        <span class="pip"></span>
+                        <span class="pip"></span>
+                    </div>
+                    <div class="cube__face cube__face--3">
+                        <span class="pip"></span>
+                        <span class="pip"></span>
+                        <span class="pip"></span>
+                    </div>
+                    <div class="cube__face cube__face--4">
+                        <div class="column">
+                            <span class="pip"></span>
+                            <span class="pip"></span>
+                        </div>
+                        <div class="column">
+                            <span class="pip"></span>
+                            <span class="pip"></span>
+                        </div>
+                    </div>
+                    <div class="cube__face cube__face--5">
+                        <div class="column">
+                            <span class="pip"></span>
+                            <span class="pip"></span>
+                        </div>
+                        <div class="column">
+                            <span class="pip"></span>
+                        </div>
+                        <div class="column">
+                            <span class="pip"></span>
+                            <span class="pip"></span>
+                        </div>
+                    </div>
+                    <div class="cube__face cube__face--6">
+                        <div class="column">
+                            <span class="pip"></span>
+                            <span class="pip"></span>
+                            <span class="pip"></span>
+                        </div>
+                        <div class="column">
+                            <span class="pip"></span>
+                            <span class="pip"></span>
+                            <span class="pip"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scene">
+                <div class="cube" data-roll="6">
+                    <div class="cube__face cube__face--1">
+                        <span class="pip"></span>
+                    </div>
+                    <div class="cube__face cube__face--2">
+                        <span class="pip"></span>
+                        <span class="pip"></span>
+                    </div>
+                    <div class="cube__face cube__face--3">
+                        <span class="pip"></span>
+                        <span class="pip"></span>
+                        <span class="pip"></span>
+                    </div>
+                    <div class="cube__face cube__face--4">
+                        <div class="column">
+                            <span class="pip"></span>
+                            <span class="pip"></span>
+                        </div>
+                        <div class="column">
+                            <span class="pip"></span>
+                            <span class="pip"></span>
+                        </div>
+                    </div>
+                    <div class="cube__face cube__face--5">
+                        <div class="column">
+                            <span class="pip"></span>
+                            <span class="pip"></span>
+                        </div>
+                        <div class="column">
+                            <span class="pip"></span>
+                        </div>
+                        <div class="column">
+                            <span class="pip"></span>
+                            <span class="pip"></span>
+                        </div>
+                    </div>
+                    <div class="cube__face cube__face--6">
+                        <div class="column">
+                            <span class="pip"></span>
+                            <span class="pip"></span>
+                            <span class="pip"></span>
+                        </div>
+                        <div class="column">
+                            <span class="pip"></span>
+                            <span class="pip"></span>
+                            <span class="pip"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        function scaleDice() {
+            const scene = [...document.querySelectorAll(".scene")];
+            scene.forEach(scene => {
+                scene.classList.add("scale");
+                setTimeout(() => { scene.classList.remove("scale"); }, 300)
+            });
+        }
+
+        function rollDice() {
+
+            const dice = [...document.querySelectorAll(".cube")];
+
+            dice.forEach(dice => {
+                dice.dataset.roll = Math.floor(Math.random() * 6) + 1;
+            });
+
+            scaleDice();
+
+        }
+
+        function sortDice() {
+
+            const dice = [...document.querySelectorAll(".cube")];
+
+            let arr = [];
+
+            dice.forEach(dice => {
+                arr.push(dice.dataset.roll)
+            });
+
+            console.log(arr);
+
+            arr = arr.sort((a, b) => a - b);
+
+            let i = 0;
+
+            dice.forEach((dice, i) => {
+                dice.dataset.roll = arr[i];
+                i++;
+            });
+
+            scaleDice()
+
+        }
+
+        function sortDescDice() {
+
+            const dice = [...document.querySelectorAll(".cube")];
+
+            let arr = [];
+
+            dice.forEach(dice => {
+                arr.push(dice.dataset.roll)
+            });
+
+            console.log(arr);
+
+            arr = arr.sort((a, b) => b - a);
+
+            let i = 0;
+
+            dice.forEach((dice, i) => {
+                dice.dataset.roll = arr[i];
+                i++;
+            });
+
+            scaleDice()
+
+        }
+
+        function oddEvenSortDice() {
+
+            const dice = [...document.querySelectorAll(".cube")];
+
+            let arr = [];
+
+            dice.forEach(dice => {
+                arr.push(dice.dataset.roll)
+            });
+
+            console.log(arr);
+
+            const isEven = num => num % 2 === 0;
+
+            const sorter = ((a, b) => {
+                if (isEven(a) && !isEven(b)) {
+                    return -1;
+                };
+                if (!isEven(a) && isEven(b)) {
+                    return 1;
+                };
+                return a - b;
+            });
+
+            const oddEvenSort = arr => {
+                arr.sort(sorter);
+            };
+
+            oddEvenSort(arr);
+
+            let i = 0;
+
+            dice.forEach((dice, i) => {
+                dice.dataset.roll = arr[i];
+                i++;
+            });
+
+            scaleDice()
+
+        }
+
+
+        document.getElementById("roll-button").addEventListener("click", rollDice);
+        document.getElementById("sort-button").addEventListener("click", sortDice);
+        document.getElementById("sortDesc-button").addEventListener("click", sortDescDice);
+        document.getElementById("oddEvenSort-button").addEventListener("click", oddEvenSortDice);
+
+    </script>
+</body>
+
+</html>
